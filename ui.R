@@ -14,7 +14,7 @@ shinyUI(fluidPage(
 
     # Application title
     titlePanel("Plot Random Numbers"),
-
+    
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
@@ -34,8 +34,11 @@ shinyUI(fluidPage(
 
         # Show a plot of the generated distribution
         mainPanel(
-            h2("Graph of Random Points"),
-            plotOutput('plot1')
+            tabsetPanel(
+                tabPanel("Plot",plotOutput('plot1')),
+                tabPanel('Documentation',includeHTML('Documentation.html')),
+                tabPanel('Repo',includeHTML('link_to_repo.html'))
+            )
         )
     )
 )

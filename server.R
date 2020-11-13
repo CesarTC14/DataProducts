@@ -45,21 +45,9 @@ shinyServer(function(input, output) {
 
         gg
 
-        # plot(dataX, dataY, xlab = xlab, ylab = ylab, main = main, type = 'o',
-        #      col = rgb(0,100,255, maxColorValue = 255),
-        #      xlim = c(-100, 100), ylim = c(-25, 25))
-
-        # df %>%
-        #     plot_ly() %>%
-        #     add_trace(x = ~x,
-        #               y = ~y,
-        #               type = 'scatter',
-        #               mode = 'markers',
-        #               marker = list(size = 10,
-        #                             color = 'rgba(0,100,255,.3')) %>%
-        #     layout(xaxis = list(title = xlab),
-        #            yaxis = list(title = ylab)
-        #     )
+        # output$markdown <- renderUI({
+        #     HTML(markdown::markdownToHTML(knit('Documentation.Rmd', quiet = TRUE)))
+        # })
     })
 
     })

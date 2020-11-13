@@ -1,0 +1,11 @@
+## How to use
+
+* The Plot shows the interaction of two random variables with differnt probabilty distributions.
+
+* The variable presented in the x axis has Chi-Squared distribution, while the one in the y axis is normally distributed.
+
+* You can change sample size and distribution parameters using the commands on the left.
+
+* Manipulating transparency helps understanding where the points are concentrated.
+
+* Be sure to redefine axis' limits to zoom in or out and explore the plot!
